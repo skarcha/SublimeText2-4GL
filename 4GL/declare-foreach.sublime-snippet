@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+declare ${1:cursor_name} cursor with hold for
+	${2:sql sentence}
+
+foreach $1 into ${3:variable1, variable2, ...}
+	${4:sentences...}
+end foreach
+
+
+]]></content>
+	<tabTrigger>declaref</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

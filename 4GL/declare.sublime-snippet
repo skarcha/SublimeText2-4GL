@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+declare ${1:cursor_name} cursor for
+
+]]></content>
+	<tabTrigger>declare</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

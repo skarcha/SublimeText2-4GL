@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+case ${1:variable}
+	when ${2:value}
+		${3:# sentences...}
+	otherwise
+		${4:# sentences...}
+end case
+
+]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

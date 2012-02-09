@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+database ${1:base}
+
+main
+${2}
+end main
+]]></content>
+	<tabTrigger>database</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

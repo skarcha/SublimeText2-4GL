@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+{
+	${2:Function description...}
+}
+function ${1:function_name}(${3:param1, param2, ...})
+${3/(.*?),/define $1\n/g}
+	${4:sentences...}
+end function
+]]></content>
+	<tabTrigger>function</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

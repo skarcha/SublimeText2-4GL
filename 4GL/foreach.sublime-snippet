@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+foreach ${1:cursor_name} into ${2:variable1, variable2, ...}
+	${3}
+end foreach
+
+
+]]></content>
+	<tabTrigger>foreach</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

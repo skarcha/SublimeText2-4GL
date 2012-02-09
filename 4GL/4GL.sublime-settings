@@ -1,0 +1,4 @@
+{
+	// Set to true to removing trailing white space on save
+	"trim_trailing_white_space_on_save": true
+}

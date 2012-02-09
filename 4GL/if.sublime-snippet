@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if ${1:condition} then
+	${2:# sentences...}
+end if
+
+]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>
