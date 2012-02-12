@@ -53,7 +53,7 @@
 			<key>comment</key>
 			<string>Operators</string>
 			<key>match</key>
-			<string>(=|!=|\+|-|/|&lt;|&gt;|(\s(or|and|is|not|set|initialize)(?=(\s|$))))</string>
+			<string>(=|!=|\+|-|/|&lt;|&gt;|,|(\s(or|and|is|not|initialize)(?=(\s|$)))|(\s(set(?=\s))))</string>
 			<key>name</key>
 			<string>keyword.operator.source.4GL</string>
 		</dict>
@@ -61,7 +61,7 @@
 			<key>comment</key>
 			<string>Constants provided by de language</string>
 			<key>match</key>
-			<string>(null|true|false|notfound)</string>
+			<string>(dirty read|null|true|false|notfound)</string>
 			<key>name</key>
 			<string>constant.language.source.4GL</string>
 		</dict>
@@ -69,7 +69,7 @@
 			<key>comment</key>
 			<string>Variables provided by de language</string>
 			<key>match</key>
-			<string>(today|\sstatus|pageno)</string>
+			<string>(isolation|today|\sstatus|pageno)</string>
 			<key>name</key>
 			<string>variable.language.source.4GL</string>
 		</dict>
@@ -77,7 +77,7 @@
 			<key>comment</key>
 			<string>Control</string>
 			<key>match</key>
-			<string>((\s|^)case(\s*|$)|continue (.*)|when |otherwise|end case|while |end while|for(\s+|$)|foreach | into |end for(each)?|(\s|^)if(?=\s+|$)|(\s+|^)then(\s+|$)|(\s+|^)else(\s+|$)|end if|return(\s+|$)|exit (.*))</string>
+			<string>((\s|^)case(\s*|$)|continue (.*)|when |otherwise|end case|while |end while|(\s|^)for(\s|$)| to(\s|$)|foreach | into |end for(each)?|(\s|^)if(?=\s+|$)|(\s+|^)then(\s+|$)|(\s+|^)else(\s+|$)|end if|return(\s+|$)|exit (.*))</string>
 			<key>name</key>
 			<string>keyword.control.source.4GL</string>
 		</dict>
@@ -85,7 +85,7 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>( between |call(?=\s+|$)| clipped|(\s|^)close(\s+|$)|create(?=\s+|$)|database |\sreturning |declare |delete(?=\s+|$)|display\s+|((\s|^)fetch((\s+|$)|(\s+(first|last)\s+)))|(\s|^)from(\s+|$)|(\s+|^)free\s+|group by\s|(\s+|^)(desc|asc)(\s+|$)|(\s+|^)insert\s+into(\s+|$)|((scroll)* cursor )|(\s|^)open(\s+|$)|prepare |(start|finish|output to) report|(\s|^)select(\s+|$)| spaces|(\s|^)update(\s+|$)|(\s|^)where(\s+|$)|output |order by|format( |$)|(first\s+)*page header|before group of|on (every|last) row|after group of| using |begin\s+work|commit\s+work|rollback\s+work|(\s+|^)values(\s+|$))</string>
+			<string>( between |call(?=\s+|$)| clipped|(\s|^)close(\s+|$)|(\s|^)create\s+(temp\s+)?(table|index)(?=\s+|$)|database |\sreturning |declare |delete(?=\s+|$)|display\s+|((\s|^)drop\s+(table|index)(\s|$))|((\s|^)fetch((\s+|$)|(\s+(first|last)\s+)))|(\s|^)from(\s+|$)|(\s+|^)free\s+|group by\s|(\s+|^)(desc|asc)(\s+|$)|(\s+|^)insert\s+into(\s+|$)|((scroll)* cursor(?=\s)(\swith hold)*)|((top|right|bottom|left)\s+margin)|page length|(\s|^)open(\s+|$)|prepare |(start|finish|output(\s+to)*)\s+report|(\s|^)select(\s+|$)| spaces|(\s|^)update(\s+|$)|(\s|^)where(\s+|$)|output |order by|format( |$)|(first\s+)*page header|before group of|on (every|last) row|after group of| using |begin\s+work|commit\s+work|rollback\s+work|(\s+|^)values(\s+|$)|((\s|^)whenever\s+(any\s+)?error\s+(continue|stop)(\s|$)))</string>
 			<key>name</key>
 			<string>keyword.other.source.4GL</string>
 		</dict>
@@ -151,7 +151,7 @@
 			<key>comment</key>
 			<string>Storage types</string>
 			<key>match</key>
-			<string>(\schar(?=[\s\(,$]))|(\sdate(\s+|$)|decimal|define | smallint| integer| float|let | like |record like)</string>
+			<string>(\schar(?=[\s\(,$]))|(\sdate(\s+|$)|decimal|define | smallint| integer| float|let | like |(end)* record|(((^|\s+)|(end\s+))globals))</string>
 			<key>name</key>
 			<string>storage.type.source.4GL</string>
 		</dict>
