@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+whenever error continue
+	${1:# sentences...}
+whenever error stop
+]]></content>
+	<tabTrigger>whenever</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>
