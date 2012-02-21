@@ -2,7 +2,7 @@
 	<content><![CDATA[
 select
 	${1:*}
-from 
+from
 	${2:table}
 where
 	
