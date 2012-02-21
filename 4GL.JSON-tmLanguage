@@ -9,7 +9,7 @@
         {"match": "."}
       ],
       "end": "\\}"
-    },
+  	},
     {
       "name": "comment.number-sign.source.4GL",
       "match": "#.*$",
